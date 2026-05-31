@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rules & Disclaimer | Stellar Partners</title>
+  <meta name="description" content="Legal rules, terms of use, and disclaimer for Stellar Partners — Investment & Strategic Capital." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --ink: #0f1923;
+      --ink-soft: #3a4a5c;
+      --ink-muted: #7a8a99;
+      --surface: #ffffff;
+      --surface-alt: #f5f4f0;
+      --surface-dark: #0f1923;
+      --accent: #1e4d8c;
+      --accent-light: #e8eef8;
+      --gold: #a07c3a;
+      --gold-light: #f0e8d5;
+      --border: #e0ddd6;
+      --radius: 4px;
+      --max: 800px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--surface);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 1140px;
+      margin: auto;
+      padding: 0 40px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--ink);
+    }
+
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      background: var(--accent);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-mark svg { width: 16px; height: 16px; fill: none; stroke: #fff; stroke-width: 1.8; }
+
+    .logo-text {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.1rem;
+    }
+
+    .nav-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--ink-soft);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-back:hover { color: var(--ink); }
+
+    .nav-back svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; }
+
+    /* HERO BAND */
+    .page-hero {
+      background: var(--surface-dark);
+      padding: 64px 40px 56px;
+    }
+
+    .page-hero-inner {
+      max-width: var(--max);
+      margin: auto;
+    }
+
+    .page-eyebrow {
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #c6a96a;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    .page-hero h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      color: #fff;
+      margin-bottom: 14px;
+    }
+
+    .page-hero p {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.9rem;
+    }
+
+    /* CONTENT */
+    .content {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 64px 40px 100px;
+    }
+
+    /* Section blocks */
+    .legal-section {
+      margin-bottom: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .legal-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .section-num {
+      font-size: 0.72rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .legal-section h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.35rem;
+      margin-bottom: 16px;
+      color: var(--ink);
+    }
+
+    .legal-section p {
+      font-size: 0.925rem;
+      color: var(--ink-soft);
+      line-height: 1.85;
+      margin-bottom: 14px;
+    }
+
+    .legal-section p:last-child { margin-bottom: 0; }
+
+    .legal-section ul {
+      list-style: none;
+      margin: 14px 0;
+    }
+
+    .legal-section ul li {
+      font-size: 0.925rem;
+      color: var(--ink-soft);
+      line-height: 1.75;
+      padding: 8px 0 8px 20px;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+
+    .legal-section ul li:last-child { border-bottom: none; }
+
+    .legal-section ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 18px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+
+    /* Disclaimer callout box */
+    .callout {
+      background: var(--gold-light);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+
+    .callout p {
+      font-size: 0.9rem;
+      color: #5a3e10 !important;
+      line-height: 1.75;
+      margin: 0 !important;
+    }
+
+    .callout strong {
+      font-weight: 600;
+      color: #3d2a0a;
+    }
+
+    /* Info callout */
+    .callout-info {
+      background: var(--accent-light);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+
+    .callout-info p {
+      font-size: 0.9rem;
+      color: #1a3a6b !important;
+      line-height: 1.75;
+      margin: 0 !important;
+    }
+
+    /* Effective date strip */
+    .meta-strip {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 24px;
+      margin-bottom: 48px;
+    }
+
+    .meta-item strong {
+      display: block;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--ink-muted);
+      margin-bottom: 4px;
+    }
+
+    .meta-item span {
+      font-size: 0.875rem;
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--surface-dark);
+      padding: 40px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .footer-inner {
+      max-width: 1140px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .footer-logo-text {
+      font-family: 'DM Serif Display', serif;
+      color: rgba(255,255,255,0.7);
+      font-size: 1rem;
+    }
+
+    .footer-links { display: flex; gap: 28px; flex-wrap: wrap; }
+    .footer-links a {
+      color: rgba(255,255,255,0.4);
+      font-size: 0.82rem;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: rgba(255,255,255,0.75); }
+
+    .footer-copy { font-size: 0.8rem; color: rgba(255,255,255,0.3); }
+
+    @media (max-width: 700px) {
+      .nav-inner { padding: 0 20px; }
+      .page-hero { padding: 48px 20px 40px; }
+      .content { padding: 40px 20px 70px; }
+      footer { padding: 32px 20px; }
+      .footer-inner { flex-direction: column; text-align: center; }
+      .footer-links { justify-content: center; }
+      .meta-strip { flex-direction: column; gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <span class="logo-text">Stellar Partners</span>
+      </a>
+      <a href="index.html" class="nav-back">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to Home
+      </a>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="page-eyebrow">Legal</div>
+      <h1>Rules &amp; Disclaimer</h1>
+      <p>Please read these terms carefully before engaging with Stellar Partners or using this website.</p>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <div class="meta-strip">
+      <div class="meta-item">
+        <strong>Effective date</strong>
+        <span id="eff-date"></span>
+      </div>
+      <div class="meta-item">
+        <strong>Jurisdiction</strong>
+        <span>United Kingdom</span>
+      </div>
+      <div class="meta-item">
+        <strong>Applies to</strong>
+        <span>This website &amp; all client engagements</span>
+      </div>
+    </div>
+
+    <div class="callout">
+      <p><strong>Important:</strong> This website does not constitute financial advice, an offer to invest, or a solicitation of any kind. All investment activities carry risk. You should seek independent professional advice before making any financial decision.</p>
+    </div>
+
+    <!-- 1 -->
+    <div class="legal-section" id="general">
+      <div class="section-num">Section 01</div>
+      <h2>General Rules of Engagement</h2>
+      <p>By accessing this website or contacting Stellar Partners, you agree to the following terms. These rules govern all interactions between Stellar Partners and any visitor, prospective client, or partner.</p>
+      <ul>
+        <li>All information provided on this website is for general informational purposes only.</li>
+        <li>No content on this site constitutes a binding offer, contract, or investment agreement.</li>
+        <li>Stellar Partners reserves the right to decline any engagement without providing a reason.</li>
+        <li>Misrepresentation of identity, intent, or financial status during any engagement is strictly prohibited.</li>
+        <li>All formal engagements must be established through a signed written agreement.</li>
+      </ul>
+    </div>
+
+    <!-- 2 -->
+    <div class="legal-section" id="compliance">
+      <div class="section-num">Section 02</div>
+      <h2>Compliance &amp; KYC Requirements</h2>
+      <p>Stellar Partners is committed to full compliance with applicable financial regulations. All prospective clients are subject to a formal onboarding process before any advisory mandate or capital engagement is activated.</p>
+      <ul>
+        <li>All clients must complete Know Your Customer (KYC) verification before engagement.</li>
+        <li>Anti-Money Laundering (AML) checks are conducted on all parties prior to any transaction.</li>
+        <li>Clients must provide accurate and current identity documentation upon request.</li>
+        <li>Stellar Partners will not engage with sanctioned individuals, entities, or jurisdictions.</li>
+        <li>Ongoing due diligence may be required throughout the duration of any engagement.</li>
+      </ul>
+
+      <div class="callout-info">
+        <p>All compliance procedures are mandatory and non-negotiable. Failure to complete required checks will result in the termination of any prospective engagement.</p>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="legal-section" id="disclaimer">
+      <div class="section-num">Section 03</div>
+      <h2>Investment Disclaimer</h2>
+      <p>Investing in financial instruments, private equity, digital assets, or any other capital market product involves substantial risk, including the possible loss of principal. Stellar Partners makes no guarantees of returns or performance.</p>
+      <p>Past performance of any investment, strategy, or financial product referenced on this website does not guarantee or predict future results. Market conditions, regulatory changes, and economic factors may significantly affect outcomes.</p>
+      <ul>
+        <li>Investments may lose value and you may receive back less than you invested.</li>
+        <li>Digital and crypto assets are highly volatile and may not be suitable for all investors.</li>
+        <li>Private market investments are illiquid and may have long lock-up periods.</li>
+        <li>Tax treatment of investments depends on individual circumstances and may be subject to change.</li>
+        <li>Stellar Partners does not provide tax, legal, or accounting advice.</li>
+      </ul>
+    </div>
+
+    <!-- 4 -->
+    <div class="legal-section" id="website">
+      <div class="section-num">Section 04</div>
+      <h2>Website Use &amp; Accuracy</h2>
+      <p>While Stellar Partners endeavours to keep information on this website accurate and up to date, no warranty is given as to the completeness, accuracy, or timeliness of the content. Information may change without notice.</p>
+      <ul>
+        <li>This website may contain links to third-party platforms (such as StellarTerm). Stellar Partners is not responsible for their content or services.</li>
+        <li>Unauthorised use, reproduction, or distribution of any content on this site is prohibited.</li>
+        <li>Stellar Partners reserves the right to modify or remove any content at any time without notice.</li>
+        <li>This website is not intended for use in jurisdictions where such use would be unlawful.</li>
+      </ul>
+    </div>
+
+    <!-- 5 -->
+    <div class="legal-section" id="contact-rules">
+      <div class="section-num">Section 05</div>
+      <h2>Contact &amp; Communication Rules</h2>
+      <p>All communications with Stellar Partners must be conducted in good faith. Enquiries submitted via this website or email are responded to within two business days.</p>
+      <ul>
+        <li>Initial consultations are confidential and carry no obligation.</li>
+        <li>No fees are charged prior to the execution of a formal signed agreement.</li>
+        <li>Unsolicited commercial communications (spam) directed at Stellar Partners will be reported.</li>
+        <li>Stellar Partners will never request payment, credentials, or sensitive data via email or messaging apps before a formal engagement is established.</li>
+      </ul>
+
+      <div class="callout">
+        <p><strong>Fraud warning:</strong> Stellar Partners will never ask for advance fees, cryptocurrency transfers, or gift card payments as part of any investment or onboarding process. If you receive such a request claiming to be from us, do not comply — contact us directly to verify.</p>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="legal-section" id="governing">
+      <div class="section-num">Section 06</div>
+      <h2>Governing Law</h2>
+      <p>These terms and any dispute arising from the use of this website or engagement with Stellar Partners shall be governed by and construed in accordance with the laws of England and Wales. Any disputes shall be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+      <p>If you have any questions about these rules or the disclaimer, please contact us at <strong>partnerships@stellarpartners.com</strong> before proceeding.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="footer-logo">
+        <div class="logo-mark" style="width:28px;height:28px;">
+          <svg viewBox="0 0 24 24" style="width:13px;height:13px;" fill="none" stroke="#fff" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <span class="footer-logo-text">Stellar Partners</span>
+      </a>
+      <div class="footer-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#approach">Approach</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="legal.html" style="color:rgba(255,255,255,0.7);">Rules &amp; Disclaimer</a>
+      </div>
+      <span class="footer-copy">© <span id="year"></span> Stellar Partners. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const d = new Date();
+    document.getElementById('eff-date').textContent = d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+  </script>
+
+</body>
+</html>
