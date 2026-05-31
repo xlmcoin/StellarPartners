@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stellar Partners | Investment & Strategic Capital</title>
+  <meta name="description" content="Stellar Partners is an investment and strategic capital firm focused on sustainable growth, disciplined execution, and long-term value creation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --ink: #0f1923;
+      --ink-soft: #3a4a5c;
+      --ink-muted: #7a8a99;
+      --surface: #ffffff;
+      --surface-alt: #f5f4f0;
+      --surface-dark: #0f1923;
+      --accent: #1e4d8c;
+      --accent-light: #e8eef8;
+      --gold: #a07c3a;
+      --gold-light: #f0e8d5;
+      --border: #e0ddd6;
+      --border-dark: rgba(255,255,255,0.1);
+      --radius: 4px;
+      --max: 1140px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--surface);
+      color: var(--ink);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: var(--max);
+      margin: auto;
+      padding: 0 40px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--ink);
+    }
+
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      background: var(--accent);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .logo-mark svg { width: 16px; height: 16px; fill: none; stroke: #fff; stroke-width: 1.8; }
+
+    .logo-text {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.3px;
+    }
+
+    nav { display: flex; align-items: center; gap: 36px; }
+
+    nav a {
+      color: var(--ink-soft);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: var(--ink); }
+
+    .nav-cta {
+      background: var(--accent);
+      color: #fff !important;
+      padding: 9px 20px;
+      border-radius: var(--radius);
+      font-weight: 600 !important;
+    }
+
+    .nav-cta:hover { background: #16397a !important; }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--surface-dark);
+      padding: 120px 40px 100px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.025'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      max-width: var(--max);
+      margin: auto;
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .hero-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.7);
+      font-size: 0.78rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 2px;
+      margin-bottom: 28px;
+    }
+
+    .hero h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.4rem, 4vw, 3.6rem);
+      line-height: 1.15;
+      color: #fff;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: #c6a96a;
+    }
+
+    .hero-desc {
+      color: rgba(255,255,255,0.6);
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 40px;
+      max-width: 520px;
+    }
+
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: var(--radius);
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-white {
+      background: #fff;
+      color: var(--ink);
+    }
+
+    .btn-white:hover { background: #f0ece4; }
+
+    .btn-ghost {
+      background: transparent;
+      color: rgba(255,255,255,0.75);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .btn-ghost:hover {
+      border-color: rgba(255,255,255,0.45);
+      color: #fff;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius);
+      overflow: hidden;
+      align-self: start;
+      margin-top: 40px;
+    }
+
+    .stat-box {
+      background: rgba(255,255,255,0.04);
+      padding: 32px 28px;
+    }
+
+    .stat-box:hover { background: rgba(255,255,255,0.07); }
+
+    .stat-num {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.4rem;
+      color: #fff;
+      margin-bottom: 6px;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.45);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    /* ── SECTION BASE ── */
+    section { padding: 90px 40px; }
+
+    .container { max-width: var(--max); margin: auto; }
+
+    .section-eyebrow {
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    .section-heading {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .section-body {
+      color: var(--ink-soft);
+      font-size: 1rem;
+      line-height: 1.75;
+      max-width: 600px;
+    }
+
+    /* ── ABOUT ── */
+    .about { background: var(--surface-alt); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .about-left {}
+
+    .about-right {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-top: 8px;
+    }
+
+    .about-item {
+      background: var(--surface-alt);
+      padding: 28px 24px;
+      transition: background 0.2s;
+    }
+
+    .about-item:hover { background: #eceae4; }
+
+    .about-item-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--accent-light);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+
+    .about-item-icon svg {
+      width: 18px; height: 18px;
+      stroke: var(--accent);
+      fill: none;
+      stroke-width: 1.8;
+    }
+
+    .about-item h4 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--ink);
+    }
+
+    .about-item p {
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+      line-height: 1.65;
+    }
+
+    /* ── SERVICES ── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 60px;
+    }
+
+    .service-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px 32px;
+      transition: all 0.25s;
+      position: relative;
+    }
+
+    .service-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-light);
+    }
+
+    .service-num {
+      font-family: 'DM Serif Display', serif;
+      font-size: 0.85rem;
+      color: var(--ink-muted);
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+      line-height: 1.7;
+    }
+
+    /* ── APPROACH ── */
+    .approach { background: var(--surface-dark); color: #fff; }
+
+    .approach .section-eyebrow { color: #c6a96a; }
+    .approach .section-heading { color: #fff; }
+    .approach .section-body { color: rgba(255,255,255,0.55); }
+
+    .approach-steps {
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .step {
+      padding: 40px 32px;
+      background: rgba(255,255,255,0.02);
+      border-left: 3px solid transparent;
+      transition: all 0.2s;
+    }
+
+    .step:hover {
+      background: rgba(255,255,255,0.05);
+      border-left-color: #c6a96a;
+    }
+
+    .step-n {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.4rem;
+      color: rgba(255,255,255,0.12);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+
+    .step h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .step p {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.7;
+    }
+
+    /* ── MARKET ── */
+    .market { background: var(--surface-alt); }
+
+    .market-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 56px 60px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .market-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--gold-light);
+      color: var(--gold);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 2px;
+      margin-bottom: 20px;
+    }
+
+    .market-card h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+
+    .market-card p {
+      color: var(--ink-soft);
+      font-size: 0.95rem;
+      line-height: 1.75;
+      max-width: 480px;
+    }
+
+    .market-cta { flex-shrink: 0; text-align: right; }
+
+    .btn-accent {
+      background: var(--accent);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: var(--radius);
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+
+    .btn-accent:hover { background: #16397a; }
+
+    .market-note {
+      font-size: 0.78rem;
+      color: var(--ink-muted);
+      margin-top: 10px;
+    }
+
+    /* ── CONTACT ── */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .contact-form {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 40px;
+    }
+
+    .form-row { margin-bottom: 20px; }
+
+    label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--ink-soft);
+      margin-bottom: 7px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 11px 14px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      color: var(--ink);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-light);
+    }
+
+    textarea { resize: vertical; min-height: 110px; }
+
+    .form-submit {
+      background: var(--accent);
+      color: #fff;
+      width: 100%;
+      padding: 13px;
+      border: none;
+      border-radius: var(--radius);
+      font-size: 0.9rem;
+      font-weight: 600;
+      font-family: 'DM Sans', sans-serif;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .form-submit:hover { background: #16397a; }
+
+    .contact-info p {
+      color: var(--ink-soft);
+      line-height: 1.8;
+      margin-bottom: 32px;
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .contact-icon {
+      width: 38px;
+      height: 38px;
+      flex-shrink: 0;
+      background: var(--accent-light);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-icon svg {
+      width: 16px; height: 16px;
+      stroke: var(--accent); fill: none; stroke-width: 1.8;
+    }
+
+    .contact-detail-text strong {
+      display: block;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--ink-muted);
+      margin-bottom: 3px;
+    }
+
+    .contact-detail-text span {
+      font-size: 0.95rem;
+      color: var(--ink);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--surface-dark);
+      padding: 40px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .footer-inner {
+      max-width: var(--max);
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .footer-logo-text {
+      font-family: 'DM Serif Display', serif;
+      color: rgba(255,255,255,0.7);
+      font-size: 1rem;
+    }
+
+    .footer-links { display: flex; gap: 28px; }
+    .footer-links a {
+      color: rgba(255,255,255,0.4);
+      font-size: 0.82rem;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: rgba(255,255,255,0.75); }
+
+    .footer-copy {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.3);
+    }
+
+    /* ── LEGAL BAR ── */
+    .legal-bar {
+      background: #080f18;
+      padding: 14px 40px;
+      text-align: center;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.25);
+      line-height: 1.7;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 50px; }
+      .hero-stats { grid-template-columns: repeat(2, 1fr); }
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .about-right { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr; }
+      .approach-steps { grid-template-columns: 1fr; }
+      .market-card { grid-template-columns: 1fr; padding: 36px; }
+      .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+      .nav-inner { padding: 0 20px; }
+      section { padding: 70px 20px; }
+      .hero { padding: 80px 20px; }
+      .footer-inner { flex-direction: column; text-align: center; }
+      .footer-links { flex-wrap: wrap; justify-content: center; }
+    }
+
+    @media (max-width: 600px) {
+      nav { gap: 16px; }
+      nav a:not(.nav-cta) { display: none; }
+      .hero-stats { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <span class="logo-text">Stellar Partners</span>
+      </a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#market">Market</a>
+        <a href="#contact" class="nav-cta">Get in Touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-label">Investment &amp; Strategic Capital</div>
+        <h1>Long-term capital for <em>ambitious</em> ventures.</h1>
+        <p class="hero-desc">Stellar Partners works with founders and institutions to identify, structure, and grow capital across private markets, digital assets, and global strategic ventures.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-white">Start a Conversation</a>
+          <a href="#services" class="btn btn-ghost">Our Services</a>
+        </div>
+      </div>
+      <div>
+        <div class="hero-stats">
+          <div class="stat-box">
+            <div class="stat-num">12+</div>
+            <div class="stat-label">Years of operation</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">40+</div>
+            <div class="stat-label">Portfolio companies</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">18</div>
+            <div class="stat-label">Countries active</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">$2B+</div>
+            <div class="stat-label">Capital deployed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="section-eyebrow">Who we are</div>
+          <h2 class="section-heading">A disciplined, relationship-driven capital firm.</h2>
+          <p class="section-body">Founded on the principles of rigorous analysis and transparent partnership, Stellar Partners brings institutional-grade discipline to private markets — with a network built over more than a decade across global financial hubs.</p>
+          <br>
+          <p class="section-body">We are not a broker, marketplace, or intermediary. We are a direct capital partner, and every engagement begins with a formal onboarding and compliance review.</p>
+        </div>
+        <div class="about-right">
+          <div class="about-item">
+            <div class="about-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h4>Global Capital Access</h4>
+            <p>Direct access to curated deal flow across private equity, venture, and digital assets.</p>
+          </div>
+          <div class="about-item">
+            <div class="about-item-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h4>Long-horizon Thinking</h4>
+            <p>We structure for outcomes measured in years, not quarters.</p>
+          </div>
+          <div class="about-item">
+            <div class="about-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h4>Aligned Incentives</h4>
+            <p>Our team co-invests in every major engagement — our interests are fully aligned with yours.</p>
+          </div>
+          <div class="about-item">
+            <div class="about-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h4>Regulatory Compliance</h4>
+            <p>All engagements proceed through documented KYC/AML and formal agreement processes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="section-eyebrow">What we do</div>
+      <h2 class="section-heading">Services &amp; capabilities.</h2>
+      <p class="section-body">We focus on four core disciplines, applied across industries and geographies where we have established knowledge and network.</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-num">01</div>
+          <h3>Private Investment Advisory</h3>
+          <p>Structured advice for institutional and high-net-worth investors entering private markets — including due diligence support, deal structuring, and ongoing portfolio oversight.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">02</div>
+          <h3>Strategic Wealth Consulting</h3>
+          <p>Comprehensive consultation for scaling and protecting capital across asset classes, jurisdictions, and economic cycles — built around each client's specific mandate.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">03</div>
+          <h3>Digital Asset Strategy</h3>
+          <p>Institutional-grade research and deployment guidance across blockchain infrastructure, tokenised assets, and regulated digital finance — grounded in compliance-first practice.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">04</div>
+          <h3>Venture Partnership</h3>
+          <p>Direct capital and strategic support for founders at growth stage — including board participation, network introductions, and operational advisory where appropriate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section class="approach" id="approach">
+    <div class="container">
+      <div class="section-eyebrow">How we work</div>
+      <h2 class="section-heading">A process built on transparency.</h2>
+      <p class="section-body">We follow a structured, documented process from first contact to ongoing partnership — no informal promises, no unclear fees.</p>
+
+      <div class="approach-steps">
+        <div class="step">
+          <div class="step-n">01</div>
+          <h4>Initial Consultation</h4>
+          <p>A no-obligation conversation to understand your situation, goals, and constraints — followed by a written summary of potential fit and next steps.</p>
+        </div>
+        <div class="step">
+          <div class="step-n">02</div>
+          <h4>Due Diligence &amp; Compliance</h4>
+          <p>Formal documentation, KYC verification, and regulatory review before any capital commitment or advisory mandate is activated.</p>
+        </div>
+        <div class="step">
+          <div class="step-n">03</div>
+          <h4>Formal Agreement</h4>
+          <p>All terms, fees, timelines, and responsibilities documented in a binding written agreement — reviewed by your own counsel if preferred.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARKET -->
+  <section class="market" id="market">
+    <div class="container">
+      <div class="market-card">
+        <div>
+          <div class="market-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            StellarTerm Platform
+          </div>
+          <h2>Access live market data &amp; trading insights.</h2>
+          <p>StellarTerm provides institutional-grade access to Stellar network markets and digital asset data. Explore liquidity, track instruments, and review market depth — all through a transparent, open platform.</p>
+        </div>
+        <div class="market-cta">
+          <a href="https://stellarterm.com" target="_blank" rel="noopener noreferrer" class="btn-accent">
+            Open StellarTerm
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+          <p class="market-note">Opens in a new tab — external platform.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-eyebrow">Contact</div>
+          <h2 class="section-heading">Let's talk about your goals.</h2>
+          <p>We respond to every enquiry within two business days. Initial conversations are confidential and carry no obligation.</p>
+
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Email</strong>
+              <span>contact@stellarpartners.com</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Registered Office</strong>
+              <span>London, United Kingdom</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Regulatory status</strong>
+              <span>All client engagements subject to formal compliance review</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <div class="form-row">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Jane Smith" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="jane@company.com" />
+          </div>
+          <div class="form-row">
+            <label for="type">Enquiry Type</label>
+            <select id="type">
+              <option value="">Select an option…</option>
+              <option>Investment Advisory</option>
+              <option>Wealth Consulting</option>
+              <option>Digital Asset Strategy</option>
+              <option>Venture Partnership</option>
+              <option>General Enquiry</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Briefly describe your situation and goals…"></textarea>
+          </div>
+          <button class="form-submit" onclick="handleSubmit(event)">Send Enquiry</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <a href="#" class="footer-logo">
+        <div class="logo-mark" style="width:28px;height:28px;">
+          <svg viewBox="0 0 24 24" style="width:13px;height:13px;" fill="none" stroke="#fff" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <span class="footer-logo-text">Stellar Partners</span>
+      </a>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#market">Market</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <span class="footer-copy">© <span id="year"></span> Stellar Partners. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <div class="legal-bar">
+    This website is for informational purposes only and does not constitute financial advice, an offer to invest, or a solicitation. Investment activities are subject to applicable regulatory requirements. Past performance does not guarantee future results. All client engagements are subject to formal KYC/AML compliance procedures.
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target;
+      btn.textContent = 'Sent — we\'ll be in touch shortly.';
+      btn.style.background = '#1d6e3f';
+      btn.disabled = true;
+    }
+  </script>
+</body>
+</html>
