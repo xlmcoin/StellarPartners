@@ -1,0 +1,147 @@
+# ==============================================================================
+# STELLAR.TOML — StellarPartners
+# This file complies with Stellar Ecosystem Proposal SEP-0001.
+# Hosted at: https://stellarpartners.vercel.app/.well-known/stellar.toml
+# ==============================================================================
+
+[DOCUMENTATION]
+ORG_NAME="Stellar Partners"
+ORG_URL="https://stellarpartners.vercel.app"
+ORG_LOGO="https://stellarpartners.vercel.app/stellar-partners-logo.svg"
+ORG_DESCRIPTION="Stellar Partners works with founders and institutions to identify, structure, and grow capital across private markets, digital assets, and global strategic ventures."
+ORG_TWITTER="StellarPartners"
+
+[[CURRENCIES]]
+code="7Ridge"
+issuer="GBCKI37ZI3PY4OXDA6PFDGESFZVMGHXC2DHEXZD6PXQVRAPPTCRTEWIN"
+display_decimals=7
+name="7Ridge"
+desc="7Ridge is also a founding member of the Global Synchronizer Foundation, the governance of the public Network. Providers of 7Trust - a Canton native identity and verified credentials solution leverages by apps and services on the network. -> https://7ridge.com/"
+conditions="Max Supply is 1 Trillion Tokens"
+image="https://stellarpartners.vercel.app/assets/7ridge.png"
+
+[[CURRENCIES]]
+code="Obsidian"
+issuer="GBCKI37ZI3PY4OXDA6PFDGESFZVMGHXC2DHEXZD6PXQVRAPPTCRTEWIN"
+display_decimals=7
+name="Obsidian Systems"
+desc="Obsidian Systems is a software development company with apps, node services and dev resources for Canton. -> https://obsidian.systems/"
+conditions="Max Supply is 1 Trillion Tokens"
+image="https://stellarpartners.vercel.app/assets/obsidian.png"
+
+[[CURRENCIES]]
+code="LTP"
+issuer="GBCKI37ZI3PY4OXDA6PFDGESFZVMGHXC2DHEXZD6PXQVRAPPTCRTEWIN"
+display_decimals=7
+name="Liquidity Tech"
+desc="LTP is a global institutional prime broker, purpose-built to meet the evolving needs of digital asset market participants. By applying traditional financial standards to blockchain innovation, LTP provides end-to-end prime services spanning trade execution, clearing, settlement, custody, and financing. Its offerings further extend to institutional asset management, regulated OTC block trading, and compliant on/off-ramp solutions — delivering a secure and scalable foundation for institutions across the digital asset ecosystem. -> https://www.liquiditytech.com/en"
+conditions="Max Supply is 1 Trillion Tokens"
+image="https://stellarpartners.vercel.app/assets/ltp.png"
+
+[[CURRENCIES]]
+code="LCV"
+issuer="GBCKI37ZI3PY4OXDA6PFDGESFZVMGHXC2DHEXZD6PXQVRAPPTCRTEWIN"
+display_decimals=7
+name="Liberty City Ventures"
+desc="Venture capital firm Liberty City Ventures is one of the 30 strategic partners that launched the Canton Network. -> https://www.libertycityventures.com/"
+conditions="Max Supply is 1 Trillion Tokens"
+image="https://stellarpartners.vercel.app/assets/lvc.png"
+
+[[CURRENCIES]]
+code="IntellectEU"
+issuer="GBCKI37ZI3PY4OXDA6PFDGESFZVMGHXC2DHEXZD6PXQVRAPPTCRTEWIN"
+display_decimals=7
+name="IntellectEU"
+desc="As a service and infrastructure provider for the Canton Network, IntellectEU's CatalyX product suite powers validator operations for participants - from node deployment and operations to app distribution. -> https://www.intellecteu.com/"
+conditions="Max Supply is 1 Trillion Tokens"
+image="https://stellarpartners.vercel.app/assets/intellectEU.png"
+
+[[CURRENCIES]]
+code="HSBC"
+issuer="GBCKI37ZI3PY4OXDA6PFDGESFZVMGHXC2DHEXZD6PXQVRAPPTCRTEWIN"
+display_decimals=7
+name="HSBC"
+desc="Provider of HSBC Orion. HSBC is also connected to Canton native applications like HKEX Synapse, and a participant in RSN/RLN and other Canton based pilots. -> https://www.hsbc.com/"
+conditions="Max Supply is 1 Trillion Tokens"
+image="https://stellarpartners.vercel.app/assets/hsbc.png"
+
+[[CURRENCIES]]
+code="Euroclear"
+issuer="GBCKI37ZI3PY4OXDA6PFDGESFZVMGHXC2DHEXZD6PXQVRAPPTCRTEWIN"
+display_decimals=7
+name="Euroclear"
+desc="Euroclear is a leading global provider of Financial Market Infrastructure services for domestic and crossborder securities transactions and funds. Euroclear participated in a program on the Canton Network to tokenize gold, Eurobonds, and gilts for use as collateral, demonstrating how tokenized assets improve liquidity, transactional efficiency, and collateral mobility. -> https://www.euroclear.com/"
+conditions="Max Supply is 1 Trillion Tokens"
+image="https://stellarpartners.vercel.app/assets/euroclear.png"
+
+[[CURRENCIES]]
+code="CUMBERLAND"
+issuer="GBCKI37ZI3PY4OXDA6PFDGESFZVMGHXC2DHEXZD6PXQVRAPPTCRTEWIN"
+display_decimals=7
+name="Cumberland SV"
+desc="Cumberland, a global leader in cryptoassets is a strategic partner, super validator, member of the Canton Foundation and active participant in applications across the network. -> https://www.cumberland.io/"
+conditions="Max Supply is 1 Trillion Tokens"
+image="https://stellarpartners.vercel.app/assets/cumberland.png"
+
+[[CURRENCIES]]
+code="Broadridge"
+issuer="GBCKI37ZI3PY4OXDA6PFDGESFZVMGHXC2DHEXZD6PXQVRAPPTCRTEWIN"
+display_decimals=7
+name="Broadridge Financial Services"
+desc="Broadridge provides critical infrastructure for investing, corporate governance, and communications, including Broadridge Distributed Ledger Repo on the Canton Network. Broadridge can also provide tokenization services to support financial institutions in bringing their assets onto Canton. -> https://www.broadridge.com"
+conditions="Max Supply is 1 Trillion Tokens"
+image="https://stellarpartners.vercel.app/assets/broadridge.png"
+
+[[CURRENCIES]]
+code="BNY"
+issuer="GBCKI37ZI3PY4OXDA6PFDGESFZVMGHXC2DHEXZD6PXQVRAPPTCRTEWIN"
+display_decimals=7
+name="BNY Financial Services"
+desc="BNY participated in Canton Network Pilots and used Canton in the US Regulated Liability Network (RLN/RSN) projects. -> https://www.bny.com"
+conditions="Max Supply is 1 Trillion Tokens"
+image="https://stellarpartners.vercel.app/assets/bny.png"
+
+[[CURRENCIES]]
+code="BNP"
+issuer="GBCKI37ZI3PY4OXDA6PFDGESFZVMGHXC2DHEXZD6PXQVRAPPTCRTEWIN"
+display_decimals=7
+name="BNP Paribas"
+desc="BNP Paribas operates Neobonds, an asset tokenization platform and is one of the 30 strategic partners that launched the Canton Network. -> https://bnpp.lk/E2gMao"
+conditions="Max Supply is 1 Trillion Tokens"
+image="https://stellarpartners.vercel.app/assets/bnpparibas.png"
+
+[[CURRENCIES]]
+code="Tradeweb"
+issuer="GBCKI37ZI3PY4OXDA6PFDGESFZVMGHXC2DHEXZD6PXQVRAPPTCRTEWIN"
+display_decimals=7
+name="Tradeweb"
+desc="Tradeweb has built and deployed a financing application being used across global collateral network initiatives on Canton today. Tradeweb integrates with other real-world asset provider on the network to support distribution and is Foundation member. -> https://www.tradeweb.com/"
+conditions="Max Supply is 1 Trillion Tokens"
+image="https://stellarpartners.vercel.app/assets/tradeweb.png"
+
+[[CURRENCIES]]
+code="DTCC"
+issuer="GBCKI37ZI3PY4OXDA6PFDGESFZVMGHXC2DHEXZD6PXQVRAPPTCRTEWIN"
+display_decimals=7
+name="DTCC"
+desc="DTCC is an active participant in the Canton and advancing the onchain migration of US Treasuries"
+conditions="Max Supply is 1 Trillion Tokens"
+image="https://stellarpartners.vercel.app/assets/dtcc.png"
+
+[[CURRENCIES]]
+code="CANTON"
+issuer="GBCKI37ZI3PY4OXDA6PFDGESFZVMGHXC2DHEXZD6PXQVRAPPTCRTEWIN"
+display_decimals=7
+name="Canton Foundation"
+desc="Connect and build on the network where finance flows -> https://www.canton.network/"
+conditions="Max Supply is 1 Trillion Tokens"
+image="https://stellarpartners.vercel.app/assets/canton.png"
+
+[[CURRENCIES]]
+code="5North"
+issuer="GBCKI37ZI3PY4OXDA6PFDGESFZVMGHXC2DHEXZD6PXQVRAPPTCRTEWIN"
+display_decimals=7
+name="5North"
+desc="Supplying precision-engineered, ultra-low carbon, prefabricated walls, floors and ceilings to our residential builder and developer clients. -> https://www.5north.com.au/"
+conditions="Max Supply is 1 Trillion Tokens"
+image="https://stellarpartners.vercel.app/assets/5north.png"
